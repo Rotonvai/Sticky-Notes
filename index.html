@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Notes</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" type="image/x-icon">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        ::selection {
+            background: pink;
+            color: purple;
         }
 
         body {
@@ -233,13 +239,12 @@
 </head>
 <body>
     <div class="app-container">
-        <div class="header">
-            <h1>Sticky Notes</h1>
-            <p>Create, customize, and organize your notes. Everything is saved automatically!</p>
-        </div>
+        
 
         <div class="controls">
+            <h1 style="position: absolute; left: 300px;">Sticky Notes</h1>
             <button id="addNote" class="btn btn-primary">
+                
                 <span>+</span> Add New Note
             </button>
             
@@ -261,7 +266,7 @@
         </div>
 
         <div class="footer">
-            <p>© 2025 All Rights Reserved. Powered By AlfaaX</p>
+            <p>Drag to move • Resize from bottom-right corner • Changes are saved automatically</p>
         </div>
     </div>
 
@@ -497,5 +502,4 @@
         });
     </script>
 </body>
-
 </html>
